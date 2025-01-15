@@ -15,6 +15,7 @@
 		8472F5842D37C4CB007DB36B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F5832D37C4CB007DB36B /* LoginView.swift */; };
 		8472F5862D37C8A1007DB36B /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F5852D37C8A1007DB36B /* InputView.swift */; };
 		8472F5892D37DD69007DB36B /* CapsuleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F5882D37DD69007DB36B /* CapsuleButtonStyle.swift */; };
+		8472F58D2D37EE09007DB36B /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F58C2D37EE09007DB36B /* CreateAccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8472F5832D37C4CB007DB36B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8472F5852D37C8A1007DB36B /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		8472F5882D37DD69007DB36B /* CapsuleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButtonStyle.swift; sourceTree = "<group>"; };
+		8472F58C2D37EE09007DB36B /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				8472F5872D37DD2C007DB36B /* Styles */,
 				8472F5832D37C4CB007DB36B /* LoginView.swift */,
 				8472F5852D37C8A1007DB36B /* InputView.swift */,
+				8472F58C2D37EE09007DB36B /* CreateAccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8472F58D2D37EE09007DB36B /* CreateAccountView.swift in Sources */,
 				8472F5892D37DD69007DB36B /* CapsuleButtonStyle.swift in Sources */,
 				8472F5842D37C4CB007DB36B /* LoginView.swift in Sources */,
 				8472F5862D37C8A1007DB36B /* InputView.swift in Sources */,

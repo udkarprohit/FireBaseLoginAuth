@@ -43,7 +43,7 @@ struct LoginView: View {
             }
             .ignoresSafeArea()
             .padding(.horizontal)
-        .padding(.vertical, 8)
+            .padding(.vertical, 8)
         }
     }
     
@@ -89,7 +89,7 @@ struct LoginView: View {
     
     private var footerView: some View {
         NavigationLink {
-            
+            CreateAccountView()
         } label: {
             HStack {
                 Text("Don't have an account?")
