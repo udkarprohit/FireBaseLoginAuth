@@ -1,8 +1,12 @@
-//
-//  CapsuleButtonStyle.swift
-//  FireBaseLoginAuth
-//
-//  Created by Udkar Bittu on 15/01/25.
-//
+import SwiftUI
 
-import Foundation
+struct CapsuleButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .foregroundStyle(.white)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Capsule().fill(.teal))
+            .scaleEffect(configuration.isPressed ? 0.95 : 1)
+    }
+}

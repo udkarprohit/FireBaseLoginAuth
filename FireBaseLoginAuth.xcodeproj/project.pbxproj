@@ -11,6 +11,10 @@
 		8472F56B2D37C1AF007DB36B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F56A2D37C1AF007DB36B /* ContentView.swift */; };
 		8472F56D2D37C1B0007DB36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472F56C2D37C1B0007DB36B /* Assets.xcassets */; };
 		8472F5702D37C1B0007DB36B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472F56F2D37C1B0007DB36B /* Preview Assets.xcassets */; };
+		8472F5822D37C455007DB36B /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472F5812D37C455007DB36B /* LoginAssets.xcassets */; };
+		8472F5842D37C4CB007DB36B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F5832D37C4CB007DB36B /* LoginView.swift */; };
+		8472F5862D37C8A1007DB36B /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F5852D37C8A1007DB36B /* InputView.swift */; };
+		8472F5892D37DD69007DB36B /* CapsuleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472F5882D37DD69007DB36B /* CapsuleButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8472F56A2D37C1AF007DB36B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8472F56C2D37C1B0007DB36B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8472F56F2D37C1B0007DB36B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8472F5812D37C455007DB36B /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
+		8472F5832D37C4CB007DB36B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8472F5852D37C8A1007DB36B /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		8472F5882D37DD69007DB36B /* CapsuleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,9 @@
 		8472F5672D37C1AF007DB36B /* FireBaseLoginAuth */ = {
 			isa = PBXGroup;
 			children = (
-				8472F5682D37C1AF007DB36B /* FireBaseLoginAuthApp.swift */,
-				8472F56A2D37C1AF007DB36B /* ContentView.swift */,
-				8472F56C2D37C1B0007DB36B /* Assets.xcassets */,
+				8472F57A2D37C2AD007DB36B /* Screens */,
+				8472F5772D37C1E0007DB36B /* Main */,
+				8472F5792D37C23C007DB36B /* Resources */,
 				8472F56E2D37C1B0007DB36B /* Preview Content */,
 			);
 			path = FireBaseLoginAuth;
@@ -65,6 +73,90 @@
 				8472F56F2D37C1B0007DB36B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8472F5772D37C1E0007DB36B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8472F5782D37C217007DB36B /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8472F5782D37C217007DB36B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8472F5682D37C1AF007DB36B /* FireBaseLoginAuthApp.swift */,
+				8472F56A2D37C1AF007DB36B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8472F5792D37C23C007DB36B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8472F56C2D37C1B0007DB36B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8472F57A2D37C2AD007DB36B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8472F57B2D37C2D0007DB36B /* Auth */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8472F57B2D37C2D0007DB36B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8472F5802D37C33C007DB36B /* Views */,
+				8472F57F2D37C2E3007DB36B /* Models */,
+				8472F57E2D37C2DF007DB36B /* ViewModels */,
+				8472F57C2D37C2D9007DB36B /* Resources */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8472F57C2D37C2D9007DB36B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8472F5812D37C455007DB36B /* LoginAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8472F57E2D37C2DF007DB36B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8472F57F2D37C2E3007DB36B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8472F5802D37C33C007DB36B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8472F5872D37DD2C007DB36B /* Styles */,
+				8472F5832D37C4CB007DB36B /* LoginView.swift */,
+				8472F5852D37C8A1007DB36B /* InputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8472F5872D37DD2C007DB36B /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				8472F5882D37DD69007DB36B /* CapsuleButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8472F5702D37C1B0007DB36B /* Preview Assets.xcassets in Resources */,
+				8472F5822D37C455007DB36B /* LoginAssets.xcassets in Resources */,
 				8472F56D2D37C1B0007DB36B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8472F5892D37DD69007DB36B /* CapsuleButtonStyle.swift in Sources */,
+				8472F5842D37C4CB007DB36B /* LoginView.swift in Sources */,
+				8472F5862D37C8A1007DB36B /* InputView.swift in Sources */,
 				8472F56B2D37C1AF007DB36B /* ContentView.swift in Sources */,
 				8472F5692D37C1AF007DB36B /* FireBaseLoginAuthApp.swift in Sources */,
 			);
