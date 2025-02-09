@@ -6,6 +6,7 @@ struct CreateAccountView: View {
     @State private var fullName: String = ""
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
+    @EnvironmentObject var authViewModel: AuthViewModel
 
     var body: some View {
         VStack(spacing: 16) {
@@ -22,7 +23,7 @@ struct CreateAccountView: View {
 
             InputView(
                 placeholder: "Full Name",
-                text: $email
+                text: $fullName
             )
 
             InputView(
@@ -55,7 +56,13 @@ struct CreateAccountView: View {
             //button
             
             Button {
-                
+                Task {
+                    await authViewModel.createUser(
+                        email: email,
+                        fullName: fullName,
+                        password: password
+                    )
+                }
             } label: {
                 Text("Create account :)")
             }

@@ -1,15 +1,17 @@
-//
-//  ContentView.swift
-//  FireBaseLoginAuth
-//
-//  Created by Udkar Bittu on 15/01/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
-        LoginView()
+        Group {
+            if authViewModel.userSession == nil {
+                LoginView()
+            } else {
+                ProfileView()
+            }
+        }
+        .environmentObject(authViewModel)
     }
 }
 
